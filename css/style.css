@@ -670,7 +670,7 @@ nav#nav-mobile a:hover {
 }
 
 .social-icons {
-    display: inline-block;
+    display: none;
     list-style: none;
 }
 
