@@ -129,6 +129,12 @@ a:hover, #header.nav-solid nav a:hover {
     background-size: 50% 120%;
 }
 
+@media (max-width:769px) {
+    #banner-content {
+        background-origin: padding-box;
+        background-size: 100% 100%;
+    }
+}
 
 /*------------------------------------------------------------------------------------------*/
 /* 5. Typography */
@@ -182,7 +188,7 @@ body {
 /* Section Title and Subtitle */
 
 .section-title {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 34px; 
     font-weight:700;
     color:#111;
