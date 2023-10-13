@@ -124,7 +124,7 @@ a:hover, #header.nav-solid nav a:hover {
 /* Banner Background and Text Colors */
 
 #banner-content {
-    background: url("../images/banner-images/Background-1.png") no-repeat;
+    background: url("https://res.cloudinary.com/do2qv7d4t/image/upload/v1697206252/Background-1.png") no-repeat;
     background-origin: content-box;
     background-size: 50% 120%;
 }
