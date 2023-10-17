@@ -56,7 +56,7 @@ $(window).load(function () { // makes sure the whole site is loaded
 
 	/* WOW Elements */
 	if (typeof WOW == 'function') {
-		wow = new WOW(
+		var wow = new WOW(
 			{
 			boxClass:     'wow',      // default
 			animateClass: 'animated', // default
