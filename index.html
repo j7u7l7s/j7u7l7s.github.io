@@ -51,7 +51,8 @@
 </div>
 <!--End of Preloader-->
 
-<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+<!--<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">-->
+<div class="page-border">
     <div class="top-border"></div>
     <div class="right-border"></div>
     <div class="bottom-border"></div>
@@ -440,7 +441,7 @@
 
 <script>// Import stylesheets
     
-    
+    document.querySelector("#contact .button").classList.add("loading");
     const url =
       'https://script.google.com/macros/s/AKfycbxijHoGlc1rRrzxatFPmwWPKSTGmr4foZHvmlGEeZa1WDBaCJnuIF9hL0AP1PyiHuE1/exec';
     
@@ -472,6 +473,7 @@
           .then((data) => {
             console.log('Successful', data);
             this.reset();
+            document.querySelector("#contact .button").classList.remove("loading");
           })
           .catch((err) => console.log('err', err));
       });
