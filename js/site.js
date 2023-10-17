@@ -56,7 +56,17 @@ $(window).load(function () { // makes sure the whole site is loaded
 
 	/* WOW Elements */
 	if (typeof WOW == 'function') {
-		new WOW().init();
+		wow = new WOW(
+			{
+			boxClass:     'wow',      // default
+			animateClass: 'animated', // default
+			offset:       0,          // default
+			mobile:       true,       // default
+			live:         true        // default
+		  }
+		  )
+		  wow.init();
+		
 	}
 
 	/* Parallax Effects */
