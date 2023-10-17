@@ -1646,6 +1646,11 @@ blockquote {
     transform: rotate(90deg);
 }
 }
+#contact .loading {
+    pointer-events: none;
+    opacity:0.2;
+    
+}
 
 /*------------------------------------------------------------------------------------------*/
 /* 7. Footer */
