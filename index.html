@@ -451,9 +451,9 @@
     
         const formData = new FormData(this);
         const data = Object.fromEntries(formData);
-        console.log(data)
-        data[gCaptchaResponse] = document.getElementById('g-recaptcha-response').value;
-        console.log(data)
+        //console.log(data)
+        //data[gCaptchaResponse] = document.getElementById('g-recaptcha-response').value;
+        //console.log(data)
     
         fetch(url, {
           method: 'POST',
