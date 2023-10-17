@@ -74,15 +74,19 @@ $(window).load(function () { // makes sure the whole site is loaded
 		$(window).enllax();
 	}
 	
-	$(".page-border .top-border").delay(350).addClass("wow fadeInDown animated");
-	$(".page-border .top-border").delay(350).attr("style", "visibility: visible; animation-name: fadeInDown;");
+	$(".page-border .top-border").addClass("wow fadeInDown animated");
+	$(".page-border .top-border").attr("style", "visibility: visible; animation-name: fadeInDown;");
 	
-	$(".page-border .right-border").delay(350).addClass("wow fadeInRight animated");
-	$(".page-border .right-border ").delay(350).attr("style", "visibility: visible; animation-name: fadeInRight;");
+	$(".page-border .right-border").addClass("wow fadeInRight animated");
+	$(".page-border .right-border ").attr("style", "visibility: visible; animation-name: fadeInRight;");
 	
-	$(".page-border .bottom-border").delay(350).addClass("wow fadeInUp animated"); 
-	$(".page-border .bottom-border ").delay(350).attr("style", "visibility: visible; animation-name: fadeInUp;");
+	$(".page-border .bottom-border").addClass("wow fadeInUp animated"); 
+	$(".page-border .bottom-border ").attr("style", "visibility: visible; animation-name: fadeInUp;");
 	
-	$(".page-border .left-border").delay(350).addClass("wow fadeInLeft animated"); 
-	$(".page-border .left-border ").delay(350).attr("style", "visibility: visible; animation-name: fadeInLeft;");
+	$(".page-border .left-border").addClass("wow fadeInLeft animated"); 
+	$(".page-border .left-border ").attr("style", "visibility: visible; animation-name: fadeInLeft;");
+
+	window.onbeforeunload = function () {
+		window.scrollTo(0, 0);
+	  }
 });
