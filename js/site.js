@@ -86,7 +86,7 @@ $(window).load(function () { // makes sure the whole site is loaded
 	$(".page-border .left-border").addClass("wow fadeInLeft animated"); 
 	$(".page-border .left-border ").attr("style", "visibility: visible; animation-name: fadeInLeft;");
 
-	window.onbeforeunload = function () {
+	window.onload = function () {
 		window.scrollTo(0, 0);
 	  }
 });
