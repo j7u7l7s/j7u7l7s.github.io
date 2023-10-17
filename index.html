@@ -441,7 +441,6 @@
 
 <script>// Import stylesheets
     
-    document.querySelector("#contact .button").classList.add("loading");
     const url =
       'https://script.google.com/macros/s/AKfycbxijHoGlc1rRrzxatFPmwWPKSTGmr4foZHvmlGEeZa1WDBaCJnuIF9hL0AP1PyiHuE1/exec';
     
@@ -449,7 +448,7 @@
       .getElementById('contact-form')
       .addEventListener('submit', function (event) {
         event.preventDefault();
-    
+
         //const formData = new FormData(this);
         //const data = Object.fromEntries(formData);
         //console.log(data)
@@ -461,6 +460,9 @@
         }
         //data[gCaptchaResponse] = document.getElementById('g-recaptcha-response').value;
         console.log(data)
+
+        document.querySelector("#contact .button").classList.add("loading");
+
     
         fetch(url, {
           method: 'POST',
