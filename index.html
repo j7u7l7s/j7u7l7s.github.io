@@ -480,7 +480,7 @@
                 alert("Form succesfully submitted!")
             }
             if (data.status == "error"){
-                alert(data.error, data.message)
+                alert("Captcha failed, please try again")
             }
             this.reset();
             document.querySelector("#contact .button").classList.remove("loading");
