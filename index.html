@@ -451,8 +451,9 @@
     
         const formData = new FormData(this);
         const data = Object.fromEntries(formData);
+        console.log(data)
         data[gCaptchaResponse] = document.getElementById('g-recaptcha-response').value;
-
+        console.log(data)
     
         fetch(url, {
           method: 'POST',
@@ -502,7 +503,7 @@
                 <li>
                     <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
                         <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                    </a>
+                    </a>`
                 </li>
                 <li>
                     <a target="_blank" title="behance" href="http://www.behance.net">
