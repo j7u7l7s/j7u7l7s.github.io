@@ -82,6 +82,12 @@ figure {
     margin: 0;
 }
 
+/*  */
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Page Border */
 
 .page-border {
@@ -1587,10 +1593,7 @@ blockquote {
 
 /* --------- 6.8 Contact Form ---------- */
 
-#contact {
-    padding: 20px;
-    margin-left:25px;
-}
+
 
 #contact h2 {
     font-family: 'Bebas Neue', sans-serif;
@@ -1617,6 +1620,14 @@ blockquote {
 .contact-image {
     max-width: 100%;
     margin-top: -50px;
+}
+#contact {
+    padding: 20px;
+}
+@media (min-width:768px) {
+    #contact {   
+        margin-left:25px;
+    }
 }
 
 @media (max-width:767px) {
@@ -1712,13 +1723,14 @@ blockquote {
 }
 
 #status {
-    width: 110px;
-    height: 110px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     left: 50%; /* centers the loading animation horizontally one the screen */
     top: 50%; /* centers the loading animation vertically one the screen */
+    transform:translate(-50%,-50%);
     background-position: center;
-    margin: -55px 0 0 -55px; /* is width and height divided by two */
+    /*margin: -55px 0 0 -55px;  is width and height divided by two */
     text-align: center;
 }
 
